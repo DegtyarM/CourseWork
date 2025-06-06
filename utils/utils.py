@@ -442,9 +442,6 @@ async def write_answer_to_dict(callback, state, param: str, score: str = "", f_d
     data = await state.get_data()
     msg_text = data["msg_text"]
     key = questions_list[data["q_num"]]
-    print(key)
-    print(questions_list)
-    print(data)
     param_to_text_keyboard = {
         "y": ("y_", "", "", "", questions_dict[key][1]),
         "n": ("n_", "", "", "", questions_dict[key][1]),
